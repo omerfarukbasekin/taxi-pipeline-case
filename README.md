@@ -113,7 +113,9 @@ docker compose up
 docker exec -ti airflow bash
 airflow dags list
 airflow webserver -p 8080
+```
 
+```bash
 # Airflow User creation
 airflow users create \
   --username .... \
@@ -122,7 +124,9 @@ airflow users create \
   --lastname .... \
   --role Admin \
   --email ....
+```
 
+```bash
 #   Airflow conn sets
 airflow connections add postgres_trips \
   --conn-type ... \
@@ -199,7 +203,7 @@ Screenshots documenting API endpoints and functionality available in `utilities/
 | `driver api.png` | Driver endpoints demonstration |
 | `client api.png` | Client endpoints demonstration |
 | `docks.png` | Docker & container setup |
-| `utilities.png` | Testing utilities overview |
+| `dbtable.png` | Testing db tables overview |
 
 ## Troubleshooting
 
