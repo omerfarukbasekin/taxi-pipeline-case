@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  airflow:
+    image: apache/airflow:2.8.1
+    build: .
+    container_name: airflow
+    environment:
+      # POSTGRES_HOST: host.docker.internal
+      # POSTGRES_PORT: 5432
+      # POSTGRES_DB: ****
+      # POSTGRES_USER: ****
+      # POSTGRES_PASSWORD: ****
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      PYTHONPATH: /opt/airflow
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./validation:/opt/airflow/validation
+      - ./loader:/opt/airflow/loader
+      - ../data:/data
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "
+      airflow db upgrade &&
+      airflow webserver -p 8080 & airflow scheduler
+      "

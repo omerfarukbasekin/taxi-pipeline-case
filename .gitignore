@@ -1,0 +1,77 @@
+# Project-specific
+notes
+notes/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+
+# Mypy
+.mypy_cache/
+
+# dotenv
+.env
+.env.*
+
+# Airflow
+airflow.cfg
+airflow.db
+logs/
+
+# Data files (do not commit large datasets)
+# data/incoming/
+data/history/
+data/rejected/
+*.csv
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+**/docker-compose.override.yml
+
+# Kubernetes secrets (avoid committing credentials)
+# k8s/secret.yaml
+
+# Local database / runtime files
+*.db
+*.sqlite3
+
+# Misc
+.DS_Store
+thumbs.db

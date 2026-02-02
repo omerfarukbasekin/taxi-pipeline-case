@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trips-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trips-api
+  template:
+    metadata:
+      labels:
+        app: trips-api
+    spec:
+      containers:
+        - name: api
+          image: trips-api:latest
+          imagePullPolicy: Never   # 🔥 BU SATIR YOKSA OLMAZ
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: postgres-secret
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
