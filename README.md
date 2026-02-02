@@ -259,12 +259,12 @@ wsl --set-default-version 2
 
 
 ## Deliverables
--	Python data ingestion script -> ./dags/loader/postgres_loader.py
--	SQL query file -> ./sql/driver_performance_report.sql & ./sql/loyal_customer_analysis.sql
--	API source code -> ./api/app/..
--	Dockerfile -> ./api/Dockerfile
--	Kubernetes manifest files (YAML) -> ./k8s/..
--	README.md (setup and run instructions)
+-	**Python data ingestion script** -> ./dags/loader/postgres_loader.py
+-	**SQL query file** -> ./sql/driver_performance_report.sql & ./sql/loyal_customer_analysis.sql
+-	**API source code** -> ./api/app/..
+-	**Dockerfile** -> ./api/Dockerfile
+-	**Kubernetes manifest files (YAML)** -> ./k8s/..
+-	**README.md (setup and run instructions)**
 
 ---
 
