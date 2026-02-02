@@ -69,7 +69,6 @@ Production-ready Kubernetes manifests:
 - Docker & Docker Compose
 - Kubernetes (minikube/kubectl)
 - Python 3.8+
-- PostgreSQL 12+
 ```
 
 ### Install Dependencies
