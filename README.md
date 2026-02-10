@@ -79,7 +79,7 @@ pip install -r requirements.txt
 ### 1. Start PostgreSQL Database
 ```bash
 cd sql
-git bash ile start postgresql
+git bash to start postgresql
 chmod +x /start_postgres.sh
 ./start_postgres.sh # or bash start_postgres.sh
 ```
@@ -169,14 +169,12 @@ Response: {"status": "healthy"}
 ```
 GET /drivers
 GET /drivers/{driver_id}
-POST /drivers
 ```
 
 ### Clients
 ```
 GET /clients
 GET /clients/{client_id}
-POST /clients
 ```
 
 ## Data Flow Pipeline
@@ -202,7 +200,7 @@ Screenshots documenting API endpoints and functionality available in `utilities/
 | `health.png` | Health check endpoint test |
 | `driver api.png` | Driver endpoints demonstration |
 | `client api.png` | Client endpoints demonstration |
-| `docks.png` | Docker & container setup |
+| `doc.png` | Doc. access |
 | `dbtable.png` | Testing db tables overview |
 
 ## Troubleshooting
