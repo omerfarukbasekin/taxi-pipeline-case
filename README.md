@@ -15,7 +15,7 @@ Comprehensive data pipeline solution for taxi trip management with Apache Airflo
 
 ### System Architecture Diagram
 
-![Taxi Pipeline System Architecture](system_architecture.png)
+![Taxi Pipeline System Architecture](utilities/architecture.jpg)
 
 ## Core Components
 
