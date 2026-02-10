@@ -13,6 +13,10 @@ Comprehensive data pipeline solution for taxi trip management with Apache Airflo
 └── utilities/            # Testing and validation screenshots
 ```
 
+### System Architecture Diagram
+
+![Taxi Pipeline System Architecture](system_architecture.png)
+
 ## Core Components
 
 ### 1. **Airflow DAG Pipeline** (`airflow/`)
